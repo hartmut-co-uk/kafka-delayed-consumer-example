@@ -8,6 +8,8 @@ So there's no guarantees for functionality or stability.
 
 Though tests/simulations done have delivered promising results.
 
+_Update: There's one known application which has been running in production for several months now performing as intended. As the author has moved on to another job after the project had been completed - there's no long term operational knowledge or further results and stats available. (Therefore should still be considered experimental <> in particular no guarantee for 100% 'exactly once' processing)._
+
 ## Approach 
 As there's no support server-side (from kafka brokers) - the delay is enforced client side by pausing (sleep) the 
 consumer based on the kafka message timestamp until the desired delayed time has come for the message to be processed. 
@@ -30,8 +32,8 @@ to verify
 
 
 ## References
-https://github.com/confluentinc/confluent-kafka-python
-https://github.com/edenhill/librdkafka/wiki/FAQ#why-committing-each-message-is-slow
-https://github.com/confluentinc/confluent-kafka-python/issues/120#issuecomment-277682117
-https://github.com/confluentinc/confluent-kafka-python/issues/307
-https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
+- https://github.com/confluentinc/confluent-kafka-python
+- https://github.com/edenhill/librdkafka/wiki/FAQ#why-committing-each-message-is-slow
+- https://github.com/confluentinc/confluent-kafka-python/issues/120#issuecomment-277682117
+- https://github.com/confluentinc/confluent-kafka-python/issues/307
+- https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
