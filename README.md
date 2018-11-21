@@ -31,6 +31,15 @@ to verify
 3. 'exactly once delivery' (as close to as possible)
 
 
+## Kafka Version
+- tested on Kafka 1.1.0
+
+
+## TODOs
+- test on Kafka 2.0.0 / 2.0.1
+- create a separate new tool 'kafka-echomaker' as a simple docker image which allows to simply _mirrormake_ an #source topic _with a delay_ to a separate #sink topic
+
+
 ## References
 - https://github.com/confluentinc/confluent-kafka-python
 - https://github.com/edenhill/librdkafka/wiki/FAQ#why-committing-each-message-is-slow
